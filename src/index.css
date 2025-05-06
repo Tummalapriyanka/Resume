@@ -1,0 +1,80 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --primary: 217 91% 60%; /* Vibrant Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 215 27.9% 90.0%; /* Light Blue-Gray */
+    --secondary-foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --muted: 215 27.9% 90.0%; /* Light Blue-Gray */
+    --muted-foreground: 225.9 5.3% 44.3%; /* Muted Dark Blue */
+
+    --accent: 215 27.9% 90.0%; /* Light Blue-Gray */
+    --accent-foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 215 20.2% 65.1%; /* Grayish Blue */
+    --input: 215 20.2% 65.1%; /* Grayish Blue */
+    --ring: 217 91% 60%; /* Vibrant Blue */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Define dark mode colors if needed later */
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 224 34% 15%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 224 34% 15%;
+    --muted-foreground: 216 12.2% 83.9%;
+
+    --accent: 224 34% 15%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 224 34% 15%;
+    --input: 224 34% 15%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+  
